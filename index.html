@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Open+Sans&family=Ysabeau:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("AAeEvfRlPuAfgsZF7");
+        })();
+    </script>
+
+    <title>Resin Wood Creations</title>
+
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-light mobile-screen">
+            <a class="navbar-brand" href="index.html">
+                <!-- <img src="logo/logo2.png" alt="logo" width="250px" height="210px"> -->
+                <!-- <img src="logo/logo2.png" alt="logo" width="200px" height="200px"> -->
+                <img src="logo/Resin_wood_new_2.png" alt="logo" width="250px" height="150px" class="mt-3">
+
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-labelledby="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="navbar-dropdown">
+                <button class="dropbtn">Home
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="navbar-dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="interior-design.html">Interior Designing</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                  </div>
+              </div>  -->
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto" style="width:1000px">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home_page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="portfolio_page" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="interiordesg_page" href="interior-design.html">Interior
+                            Designing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact_page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Mobile Screen navbar and carousel starts-->
+        <div class="container-fluid banner desktop-screen">
+             <!-- Navbar section  starts-->
+             <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <!-- <img src="logo/logo2.png" alt="logo" width="250px" height="210px"> -->
+                    <!-- <img src="logo/logo2.png" alt="logo" width="200px" height="200px"> -->
+                    <img src="logo/Resin_wood_new_2.png" alt="logo" width="250px" height="150px" class="mt-3">
+    
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-labelledby="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto" style="width:1000px">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home_page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="portfolio_page" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="interiordesg_page" href="interior-design.html">Interior
+                                Designing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="about_page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact_page" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navbar section ends-->
+            <div id="bannerIndicators" class="carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#bannerIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#bannerIndicators" data-slide-to="1"></li>
+                    <li data-target="#bannerIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-animation active banner-carousel" id="item-1">
+                        <div class="col-md-6 col-lg-6">
+                    
+                            <!-- Banner Content starts-->
+                            <div class="banner-content content-1">
+                                <h2>Elevate Your Home Decor with Exquisite Resin and Wood Furniture</h2>
+                                <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                                    Collection!</p>
+                                <button type="button" id="CTA">DISCOVER</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="banner-images" style="left:143% !important">
+                                <div class="right-image">
+                                    <img src="banner/banner-small-1.jpeg" alt="banner long image" width="400px" height="800px">
+                                </div>
+                                <div class="left-image">
+                                    <img src="banner/small-1.jpg" alt="banner short image" width="100%" height="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carousel-item-animation banner-carousel" id="item-2">
+                        <div class="col-md-6 col-lg-6">
+                    
+                            <!-- Banner Content starts-->
+                            <div class="banner-content content-1">
+                                <h2>Elevate Your Interior Decor with Exquisite Resin and Wood Furniture</h2>
+                                <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                                    Collection!</p>
+                                <button type="button" id="CTA">DISCOVER</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="banner-images" style="left:143% !important">
+                                <div class="right-image">
+                                    <img src="banner/banner-small-1.jpeg" alt="banner long image" width="400px" height="800px">
+                                </div>
+                                <div class="left-image">
+                                    <img src="banner/small-2.jpg" alt="banner short image" width="100%"
+                                        height="100%" style="width: 280px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carousel-item-animation banner-carousel" id="item-3">
+                        <div class="col-md-6 col-lg-6">
+                    
+                            <!-- Banner Content starts-->
+                            <div class="banner-content content-1">
+                                <h2>Elevate Your Home Decor with Exquisite Resin and Wood Furniture</h2>
+                                <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                                    Collection!</p>
+                                <button type="button" id="CTA">DISCOVER</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="banner-images" style="left:143% !important">
+                                <div class="right-image">
+                                    <img src="banner/banner-small-1.jpeg" alt="banner long image" width="400px" height="800px">
+                                </div>
+                                <div class="left-image">
+                                    <img src="banner/small-3.jpg" alt="banner short image" width="100%"
+                                        height="100%" style="width: 280px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-none">
+                 <div class="col-md-6 col-lg-6">
+                    
+                    <!-- Banner Content starts-->
+                    <div class="banner-content content-1">
+                        <h2>Elevate Your Home Decor with Exquisite Resin and Wood Furniture</h2>
+                        <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                            Collection!</p>
+                        <button type="button" id="CTA">DISCOVER</button>
+                    </div>
+
+                    <div class="banner-content content-2 d-none">
+                        <h2> Resin and Wood Furniture</h2>
+                        <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                            Collection!</p>
+                        <button type="button" id="CTA">DISCOVER</button>
+                    </div>
+
+                    <div class="banner-content content-3 d-none">
+                        <h2>Elevate Your Home Decor with Exquisite Resin and Wood Furniture</h2>
+                        <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                            Collection!</p>
+                        <button type="button" id="CTA">DISCOVER</button>
+                    </div>
+
+                    <!-- Banner Content ends -->
+                </div> 
+                <!-- Banner Carousel start -->
+                <div class="col-md-6">
+                    <div id="bannerIndicators" class="carousel" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item carousel-item-animation active banner-carousel" id="item-1">
+                                <div class="banner-images">
+                                    <div class="right-image">
+                                        <img src="banner/main-1.jpg" alt="banner long image" width="400px" height="800px">
+                                    </div>
+                                    <div class="left-image">
+                                        <img src="banner/small-1.jpg" alt="banner short image" width="100%" height="100%">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item carousel-item-animation  banner-carousel" id="item-2">
+                                <div class="banner-images">
+                                    <div class="right-image">
+                                        <img src="banner/main-2.jpg" alt="banner long image" width="400px" height="800px">
+                                    </div>
+                                    <div class="left-image">
+                                        <img src="banner/small-2.jpg" alt="banner short image" width="100%"
+                                            height="100%" style="width: 280px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item carousel-item-animation  banner-carousel" id="item-3">
+                                <div class="banner-images">
+                                    <div class="right-image">
+                                        <img src="banner/main-3.jpg" alt="banner long image" width="400px" height="800px">
+                                    </div>
+                                    <div class="left-image">
+                                        <img src="banner/small-3.jpg" alt="banner short image" width="100%"
+                                            height="100%" style="width: 280px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner Carousel ends -->
+            </div>
+        </div>
+        <!-- Mobile Screen navbar and carousel ends -->
+
+            <!-- Banner Carousel start -->
+            <div class="main-banner mobile-screen">
+                <div id="bannerIndicators" class="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-item-animation active banner-carousel" id="item-1">
+                            <div class="banner-content content-1">
+                                <h2>Elevate Your Home Decor with Exquisite Resin and Wood Furniture</h2>
+                                <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                                    Collection!</p>
+                                <button type="button" id="CTA">DISCOVER</button>
+                            </div>
+                            <div class="banner-images">
+                                <div class="right-image">
+                                    <img class="mobile-banner-main" src="banner/main-1.jpg" alt="banner long image" width="400px" height="800px">
+                                </div>
+                            
+                                <div class="left-image">
+                                    <img src="banner/small-1.jpg" alt="banner short image" width="100%" height="100%">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item carousel-item-animation  banner-carousel" id="item-2">
+                            <div class="banner-content content-1">
+                                <h2>Elevate Your Home Decor with Exquisite Resin and Wood Furniture</h2>
+                                <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                                    Collection!</p>
+                                <button type="button" id="CTA">DISCOVER</button>
+                            </div>
+
+                            <div class="banner-images">
+                                <div class="right-image">
+                                    <img src="banner/main-2.jpg" alt="banner long image" width="400px" height="800px">
+                                </div>
+                                <div class="left-image">
+                                    <img src="banner/small-2.jpg" alt="banner short image" width="100%"
+                                        height="100%" style="width: 280px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-animation  banner-carousel" id="item-3">
+                            <div class="banner-content content-1">
+                                <h2>Elevate Your Home Decor with Exquisite Resin and Wood Furniture</h2>
+                                <p class="mt-3">Discover the Beauty of Nature Infused with Modern Elegance in Our Stunning
+                                    Collection!</p>
+                                <button type="button" id="CTA">DISCOVER</button>
+                            </div>
+
+                            <div class="banner-images">
+                                <div class="right-image">
+                                    <img src="banner/main-3.jpg" alt="banner long image" width="400px" height="800px">
+                                </div>
+                                <div class="left-image">
+                                    <img src="banner/small-3.jpg" alt="banner short image" width="100%"
+                                        height="100%" style="width: 280px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Carousel ends -->
+
+        <!-- Products Carousel starts -->
+        <section class="products mt-5">
+            <div class="products-links">
+                <h3 style="text-align: center;">Featured Categories</h3>
+                <div class="row">
+                    <div class="col-md-3" id="featured-clocks">
+                        <buttton class="" type="button" id="clocks-btn">Clocks</buttton>
+                    </div>
+                    <div class="col-md-3">
+                        <buttton class="" type="button" id="center-tb-btn">Center Tables</buttton>
+                    </div>
+                    <div class="col-md-3">
+                        <buttton class="" type="button" id="dining-tb-btn">Dining Tables</buttton>
+                    </div>
+                    <div class="col-md-3">
+                        <buttton class="" type="button" id="wall-decor-btn">Wall Decor</buttton>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <h3 class="mt-5" id="products-caro-h3" style="text-align: center;">Featured Items</h3>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="container">
+                        <div class="carousel-inner">
+                            <div class="random-banner carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4 random-carousel">
+                                        <img class="d-block featured-items-img" src="clocks/clock-1.webp" alt="Featured Item-1" width="300px"
+                                            height="300px">
+                                        <!-- <img class="d-block" src="http://via.placeholder.com/200x200" alt="First slide" width="200px" height="200px"> -->
+                                    </div>
+                                    <div class="col-md-4 random-carousel">
+                                        <img class="d-block featured-items-img" src="clocks/clock-2.webp" alt="Featured Item-2" width="300px"
+                                            height="300px">
+                                        <!-- <img class="d-block" src="http://via.placeholder.com/200x200" alt="First slide" width="200px" height="200px"> -->
+                                    </div>
+                                    <div class="col-md-4 random-carousel">
+                                        <img class="d-block featured-items-img" src="tables/table-1.webp" alt="Featured Item-3" width="300px"
+                                            height="300px">
+                                        <!-- <img class="d-block" src="http://via.placeholder.com/200x200" alt="First slide" width="200px" height="200px"> -->
+                                    </div>
+
+                                    <div class="col-md-4 random-carousel">
+                                        <img class="d-block featured-items-img" src="tables/table-6.webp" alt="Featured Item-4" width="300px"
+                                            height="300px">
+                                        <!-- <img class="d-block" src="http://via.placeholder.com/200x200" alt="First slide" width="200px" height="200px"> -->
+                                    </div>
+                                    <div class="col-md-4 random-carousel">
+                                        <img class="d-block featured-items-img" src="tables/table-7.webp" alt="Featured Item-5" width="300px"
+                                            height="300px">
+                                        <!-- <img class="d-block" src="http://via.placeholder.com/200x200" alt="First slide" width="200px" height="200px"> -->
+                                    </div>
+                                    <div class="col-md-4 random-carousel">
+                                        <img class="d-block featured-items-img" src="wall-decor/decor-1.avif" alt="Featured Item-6"
+                                            width="300px" height="300px">
+                                        <!-- <img class="d-block" src="http://via.placeholder.com/200x200" alt="First slide" width="200px" height="200px"> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clocks-banner  carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 clocks-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-1.webp" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-7"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 clocks-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-2.webp" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-8"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 clocks-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-3.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-9"
+                                            width="300px" height="300px">
+                                    </div>
+
+                                    <div class="col-md-4 clocks-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-5.webp" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-10"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 clocks-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-6.webp" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-11"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 clocks-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-7.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-12"
+                                            width="300px" height="300px">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="center-tb-banner  carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 center-tables-carousel">
+                                        <!-- <img class="d-block" src="tables/table-1.webp" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-13"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 center-tables-carousel">
+                                        <!-- <img class="d-block" src="tables/table-2.jpg" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-14"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 center-tables-carousel">
+                                        <!-- <img class="d-block" src="tables/table-3.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-15"
+                                            width="300px" height="300px">
+                                    </div>
+
+
+                                    <div class="col-md-4 center-tables-carousel">
+                                        <!-- <img class="d-block" src="tables/table-5.jpeg" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-16"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 center-tables-carousel">
+                                        <!-- <img class="d-block" src="tables/table-6.webp" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-17"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 center-tables-carousel">
+                                        <!-- <img class="d-block" src="tables/table-7.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-18"
+                                            width="300px" height="300px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dining-tb-banner  carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 dining-tables-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-1.webp" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-19"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 dining-tables-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-2.webp" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-20"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 dining-tables-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-3.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-21"
+                                            width="300px" height="300px">
+                                    </div>
+
+
+                                    <div class="col-md-4 dining-tables-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-5.webp" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-22"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 dining-tables-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-6.webp" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-23"
+                                            width="300px" height="300px">
+                                    </div>
+                                    <div class="col-md-4 dining-tables-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-7.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-24"
+                                            width="300px" height="300px">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="wall-decor-banner carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 wall-decor-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-1.webp" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-25"
+                                            width="300px" height="300px">
+
+                                    </div>
+                                    <div class="col-md-4 wall-decor-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-2.webp" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-26"
+                                            width="300px" height="300px">
+
+                                    </div>
+                                    <div class="col-md-4 wall-decor-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-3.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-27"
+                                            width="300px" height="300px">
+
+                                    </div>
+
+                                    <div class="col-md-4 wall-decor-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-5.webp" alt="First slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-28"
+                                            width="300px" height="300px">
+
+                                    </div>
+                                    <div class="col-md-4 wall-decor-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-6.webp" alt="Second slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-29"
+                                            width="300px" height="300px">
+
+                                    </div>
+                                    <div class="col-md-4 wall-decor-carousel">
+                                        <!-- <img class="d-block" src="clocks/clock-7.webp" alt="Third slide" width="200px" height="200px"> -->
+                                        <img class="d-block featured-items-img" src="http://via.placeholder.com/300x300" alt="Featured Item-30"
+                                            width="300px" height="300px">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-dark" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next bg-dark" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <!-- Products Carousel ends -->
+
+
+        <!-- What We Do Section starts -->
+        <section class="About mt-3">
+            <div class="container">
+                <h3 style="text-align: center;">
+                    What We Do?
+                </h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </section>
+        <!--  What We Do Section ends -->
+
+        <!-- Testimonial section starts -->
+        <div class="Reviews mt-5">
+            <div class="container">
+                <h3 style="text-align: center;">Testimonials</h3>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <div class="testimonial-header">
+                                <img src="..." alt="Testimonial 1">
+                                <h3>John Doe</h3>
+                                <span class="star-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </span>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices, leo vitae
+                                    bibendum lacinia, velit arcu accumsan sapien, at blandit massa dolor ac metus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <div class="testimonial-header">
+                                <img src="..." alt="Testimonial 2">
+                                <h3>Jane Smith</h3>
+                                <span class="star-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>Nulla facilisi. Sed congue sapien vitae dolor suscipit, a venenatis velit maximus.
+                                    Nullam rhoncus, justo in fermentum bibendum, purus magna ullamcorper augue, eu
+                                    blandit quam ipsum ac ante.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <div class="testimonial-header">
+                                <img src="..." alt="Testimonial 3">
+                                <h3>David Lee</h3>
+                                <span class="star-ratings">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>Curabitur congue euismod sapien, vel bibendum risus placerat non. Sed non nisi in
+                                    tellus posuere vestibulum. Sed vel risus commodo, vestibulum ante sit amet, sagittis
+                                    justo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Section ends -->
+
+        <!-- Full Image starts -->
+        <div class="container-fluid">
+            <div class="full-image mt-5">
+                
+                <img class="img-responsive" src="full-image.jpg" alt="full=image" width="100%" height="100%">
+            </div>
+        </div>
+        <!-- Full Image ends -->
+
+        <!--  Contact Us Section starts -->
+        <section class="Contact">
+            <div class="container-fluid">
+                <h3 class="mt-5">Contact Us</h3>
+                <div class="row mt-5" id="contactus-id">
+                    <div class="col-md-6">
+                        <div class="contact-content mt-3">
+                            <p>
+                                We would love to hear from you! If you have any questions about our products, services,
+                                or just want to say hello, please feel free to contact us using the form below or via
+                                phone or email.
+                                Our team is dedicated to providing exceptional customer service and will do our best to
+                                respond to your inquiry as quickly as possible.
+                            </p>
+                            <p>Thank you for considering our Epoxy Resin products. We look forward to hearing from you
+                                soon!</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="name"></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact"></label>
+                                <input type="text" class="form-control" id="contact"
+                                    placeholder="Enter your contact number" name="contact" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact"></label>
+                                <input type="text" class="form-control" id="contact_email"
+                                    placeholder="Enter your email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message"></label>
+                                <textarea class="form-control" id="message" placeholder="Enter your message"
+                                    name="message" required></textarea>
+                            </div>
+                            <button type="submit" id="submit-form">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Contact Us Section ends -->
+
+        <div class="scroll-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg>
+        </div>
+    </main>
+    <!-- Footer Section starts -->
+    <footer class="Footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="social-media-links">
+                        <h4 style="color:#e7ecf3;font-family: 'Open Sans';">Follow Us On</h4>
+                        <ol style="list-style: none;display: inline-flex;">
+                            <li class="facebook mr-3"><a href="#"><i class="fa-brands fa-facebook"
+                                        style="color: #e7ecf3;"></i></a></li>
+                            <li class="instagram mr-3"><a href="https://www.instagram.com/resinwoodcreation/" target="_blank"><i class="fa-brands fa-instagram"
+                                        style="color:#e7ecf3"></i></a></li>
+                            <li class="whatsapp mr-3"><a href="#"><i class="fa-brands fa-whatsapp"
+                                        style="color:#e7ecf3"></i></a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quick-links">
+                        <h4 style="color:#e7ecf3;font-family: 'Open Sans';">Quick Links</h4>
+                        <ul style="margin-left: -34px;">
+                            <li class="quick-links-access"><a href="index.html" class="text-secondary">Home</a></li>
+                            <li class="quick-links-access"><a href="products.html" class="text-secondary">Products</a>
+                            </li>
+                            <li class="quick-links-access"><a href="interior-design.html"
+                                    class="text-secondary">Interior Designing</a></li>
+                            <li class="quick-links-access"><a href="clocks-gallery.html" class="text-secondary">Clocks
+                                    Gallery</a></li>
+                            <li class="quick-links-access"><a href="center-tables-gallery.html"
+                                    class="text-secondary">Center Table Gallery</a></li>
+                            <li class="quick-links-access"><a href="dining-tables-gallery.html"
+                                    class="text-secondary">Dining Table Gallery</a></li>
+                            <li class="quick-links-access"><a href="wall-decor.html" class="text-secondary">Wall Decor
+                                    Gallery</a></li>
+                            <li class="quick-links-access"><a href="about.html" class="text-secondary">About Us</a></li>
+                            <li class="quick-links-access"><a href="contact.html" class="text-secondary">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-links">
+                        <h4 style="color:#e7ecf3;font-family: 'Open Sans';">Contact Us On</h4>
+                        <li class="mt-3"><i class="fa-solid fa-phone" style="color:#e7ecf3"></i><span
+                                id="number">+91-1234567890</span></li>
+                        <li class="mt-3"><i class="fa-solid fa-envelope" style="color:#e7ecf3"></i><span
+                                id="email">JohnDoe@gmail.com</span></li>
+                        <li class="mt-3"><i class="fa-solid fa-location-dot" style="color:#e7ecf3"></i><span
+                                id="location">Hyderabad</span></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="background-color:#e7ecf3;">
+
+        <p style="text-align:center;color:#e7ecf3;margin-top:50px"><i class="fa-regular fa-copyright"
+                style="color:#e7ecf3;margin-right:10px"></i>2023 All Rights Reserved By Resin Wood Creations</p>
+    </footer>
+    <!-- Footer Section ends -->
+</body>
+<!-- 
+<script>
+    function sendEmail(){
+        var params = {
+            name: document.getElementById("name").value(),
+            contact: document.getElementById("contact").value(),
+            email: document.getElementById("email").value(),
+            message: document.getElementById("message").value(),
+        };
+
+    const serviceID = "service_hj7xwkm";
+    const templateID = "template_cnmtnfl";
+
+    emailjs
+    .send(serviceID,templateID,params)
+    .then((res) => {
+        document.getElementById("name").value() = "",
+        document.getElementById("contact").value() = "",
+        document.getElementById("email").value() = "",
+        document.getElementById("message").value() = "",
+        console.log(res);
+        alert("Your message have been sent successfully");
+    })
+    .catch((err) => console.log(err,"error"));   
+}
+</script> -->
+
+<script>
+    // var $carousel = $('#bannerIndicators')
+    // $carousel.carousel('pause');
+</script>
+
+<script>
+
+$(document).ready(function() {
+  var scrollToTopBtn = $(".scroll-top");
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      scrollToTopBtn.fadeIn();
+    } else {
+      scrollToTopBtn.fadeOut();
+    }
+  });
+
+  scrollToTopBtn.on('click',function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
+});
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $('#clocks-btn').on('click', function () {
+            window.location.href = 'clocks-gallery.html';
+        });
+
+        $('#center-tb-btn').on('click', function () {
+           window.location.href = 'center-tables-gallery.html';
+        });
+
+        $('#dining-tb-btn').on('click', function () {
+            window.location.href = 'dining-tables-gallery.html';
+        });
+
+        $('#wall-decor-btn').on('click', function () {
+            window.location.href = 'wall-decor.html';
+        });
+
+    })
+</script>
+
+
+
+<script>
+    $('#CTA').on('click', function () {
+        window.location.href = 'portfolio.html';
+    })    
+</script>
+
+
+<script>
+    $('#btn-clock').on('click', function () {
+        $('.clock-items').addClass('active');
+        $('.diningTable-items').removeClass('active');
+        $('.centerTable-items').removeClass('active');
+        $('.interiorDesign-items').removeClass('active');
+    })
+
+    $('#btn-dining-table').on('click', function () {
+        $('.diningTable-items').addClass('active');
+        $('.clock-items').removeClass('active');
+        $('.centerTable-items').removeClass('active');
+        $('.interiorDesign-items').removeClass('active');
+    })
+
+    $('#btn-center-table').on('click', function () {
+        $('.centerTable-items').addClass('active');
+        $('.clock-items').removeClass('d-none');
+        $('.diningTable-items').removeClass('active');
+        $('.interiorDesign-items').removeClass('active');
+    })
+
+    $('#btn-interior-design').on('click', function () {
+        $('.interiorDesign-items').addClass('active');
+        $('clock-items').removeClass('active')
+        $('.diningTable-items').removeClass('active');
+        $('.centerTable-items').removeClass('active');
+    })
+</script>
+
+<script>
+    $(document).ready(function() {
+  
+    $('.featured-items-img').on('click', function() {
+        var $imageSrc = $(this).attr('src');
+        
+        // Create zoom container and image
+        var $zoomContainer = $('<div>').addClass('zoom-container');
+        var $zoomImage = $('<img>').attr('src', $imageSrc).addClass('zoom-image');
+        
+        // Add image to zoom container and zoom container to the document
+        $zoomContainer.append($zoomImage);
+        $('body').append($zoomContainer);
+        
+        // Show the zoom container with fade-in effect
+        $zoomContainer.fadeIn();
+        
+        // Add blur effect to gallery images
+        $('.featured-items-img').not(this).css('filter', 'blur(5px)');
+        
+        // Add click event listener to the zoom container to close it
+        $zoomContainer.on('click', function() {
+        $zoomContainer.fadeOut(function() {
+            $zoomContainer.remove();
+            
+            // Remove blur effect from gallery images
+            $('.featured-items-img').css('filter', '');
+        });
+        });
+  
+    });
+});
+</script>
+
+</html>
